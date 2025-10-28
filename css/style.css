@@ -10,7 +10,6 @@ body {
   line-height: 1.6;
 }
 
-/* ----------- HEADER ----------- */
 
 .hero {
   position: relative;
@@ -82,4 +81,245 @@ nav {
 
 .nav-links a:hover {
   opacity: 1;
+}
+
+
+.hero-content {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  max-width: 600px;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #f4c47b;
+  border: 2px solid #f4c47b;
+  color: #2c2c2c;
+}
+
+.primary:hover {
+  background: #e5b36a;
+  border-color: #e5b36a;
+}
+
+.secondary {
+  background: #d85c27;
+  border: 2px solid #d85c27;
+  color: #fff;
+}
+
+.secondary:hover {
+  background: #c45021;
+  border-color: #c45021;
+}
+
+
+.about {
+  background: #f7f3ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 80px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.services {
+  position: relative;
+  background: url("../img/techo-cristal.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 28, 48, 0.4);
+}
+
+.services > * {
+  position: relative;
+  z-index: 1;
+}
+
+.services h3 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team article img {
+  width: 220px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.testimonials {
+  background: #f7f3ed;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+blockquote {
+  background: #fff;
+  padding: 20px;
+  border-left: 4px solid #0c7b93;
+  max-width: 300px;
+}
+
+
+.contact-form {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* ----------- LOCATION ----------- */
+
+.location {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.location iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  margin-top: 20px;
+}
+
+
+footer {
+  background: #0d1a3c;
+  color: #fff;
+  padding: 60px 5%;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+footer h4 {
+  margin-bottom: 15px;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  width: 70%;
+}
+
+.newsletter button {
+  padding: 10px 15px;
+  border: none;
+  background: #f4c47b;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.newsletter button:hover {
+  background: #e5b36a;
 }
